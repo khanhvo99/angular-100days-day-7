@@ -1,0 +1,12 @@
+<hello name="{{ name }}"></hello>
+<p>
+	Start editing to see some magic happen :)
+</p>
+<progress-app></progress-app>
+<br>
+<button (click)="currenprogress = currenprogress - 1">-</button>
+Lenght
+<button [style.margin-bottom]="'10px'" (click)="currenprogress = currenprogress + 1">+</button>
+<p>Lenght: {{currenprogress}}</p>
+<br>
+<progress-app [progress]="currenprogress" [progressColor]="'dodgerblue'"></progress-app>
